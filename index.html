@@ -15,7 +15,7 @@
     ></script>
   </head>
 
-  <body>
+  <body class="body__wrapper">
     <section id=" navbar">
       <div class="row">
         <div class="nav">
@@ -77,7 +77,7 @@
       </div>
     </header>
 
-    <main>
+    <main id="main">
       <section id="features">
         <div class="container">
           <div class="row">
@@ -222,7 +222,7 @@
               <img src="./assets/laptop.png" alt="" class="steps__img" />
             </figure>
             <div class="steps__desc">
-              <p class="purple">STEPS</p>
+              <h4 class="purple">STEPS</h4>
               <h2 class="step__subtitle">
                 Easy to Get <span class="purple">Started.</span>
               </h2>
@@ -278,7 +278,9 @@
                 <div class="values__sub">
                   <div class="value__sub-para">
                     <figure class="value__sub-img">
-                      <i class="fa-regular fa-dollar-sign affo"></i>
+                      <div class="affo__wrapper">
+                        <i class="fa-regular fa-dollar-sign affo"></i>
+                      </div>
                       <p class="value__img-para">Affordable</p>
                     </figure>
                     <div>
@@ -404,7 +406,7 @@
               />
             </figure>
             <div class="testimonial__desc-wrapper">
-              <p class="purple">TESTIMONIALS</p>
+              <h4 class="purple">TESTIMONIALS</h4>
               <h2>Our Clients <span class="purple">Love Us.</span></h2>
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque
@@ -472,7 +474,7 @@
       <section class="faq">
         <div class="row">
           <div>
-            <h3 class="purple">FAQS</h3>
+            <h4 class="purple">FAQS</h4>
             <h1>You have <span class="purple">Questions?</span></h1>
             <p>
               And we have got answers to all of them.
@@ -481,7 +483,7 @@
               >
             </p>
           </div>
-          <div>
+          <div class="faq__wrapper">
             <div class="faq__row">
               <p>Are all the templates easily customizeable?</p>
               <i class="fa-solid fa-chevron-down"></i>
@@ -511,6 +513,118 @@
           </div>
         </div>
       </section>
+
+      <section id="getting__started">
+        <div class="row">
+          <div class="getting__started--box">
+            <div class="box__left">
+              <h2>Developers all over the world are happily using Treact.</h2>
+            </div>
+            <div class="getting__started--buttons">
+              <div>
+                <h4 class="box__button orange">Get Started</h4>
+              </div>
+              <div>
+                <h4 class="box__button transparent">Contact Us</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer id="footer">
+      <div class="row">
+        <div class="footer__content">
+          <div>
+            <h5 class="footer__links--heading">MAIN</h5>
+            <ul class="footer__links">
+              Blog
+            </ul>
+            <ul class="footer__links">
+              FAQs
+            </ul>
+            <ul class="footer__links">
+              Support
+            </ul>
+            <ul class="footer__links">
+              About Us
+            </ul>
+          </div>
+          <div>
+            <h5 class="footer__links--heading">PRODUCT</h5>
+            <ul class="footer__links">
+              Log In
+            </ul>
+            <ul class="footer__links">
+              Personal
+            </ul>
+            <ul class="footer__links">
+              Business
+            </ul>
+            <ul class="footer__links">
+              Team
+            </ul>
+          </div>
+          <div>
+            <h5 class="footer__links--heading">PRESS</h5>
+            <ul class="footer__links">
+              Logos
+            </ul>
+            <ul class="footer__links">
+              Events
+            </ul>
+            <ul class="footer__links">
+              Stories
+            </ul>
+            <ul class="footer__links">
+              Ofiice
+            </ul>
+          </div>
+          <div>
+            <h5 class="footer__links--heading">TEAM</h5>
+            <ul class="footer__links">
+              Carrer
+            </ul>
+            <ul class="footer__links">
+              Founders
+            </ul>
+            <ul class="footer__links">
+              Culture
+            </ul>
+            <ul class="footer__links">
+              Onboarding
+            </ul>
+          </div>
+          <div>
+            <h5 class="footer__links--heading">LEGAL</h5>
+            <ul class="footer__links">
+              GDPR
+            </ul>
+            <ul class="footer__links">
+              Privacy Policy
+            </ul>
+            <ul class="footer__links">
+              Term of Servcice
+            </ul>
+            <ul class="footer__links">
+              Disclaimer
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="footer__lower--part">
+          <div class="footer__logo--container">
+            <figure class="footer__logo--wrapper"><img src="/assets/footer-logo.svg" class="footer__logo" alt="" /></figure>
+            <h5 class="logo__name">Treact Inc.</h5>
+          </div>
+          <div class="footer__copyright">© 2023 Treact Inc. All Rights Reserved.</div>
+          <div class="footer__social--links">
+            <figure class="social__links--wrapper"><i class="fa-brands fa-facebook footer__social--link"></i></figure>
+            <figure class="social__links--wrapper"><i class="fa-brands fa-twitter footer__social--link"></i></figure>
+            <figure class="social__links--wrapper"><i class="fa-brands fa-youtube footer__social--link"></i></figure>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
