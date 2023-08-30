@@ -7,8 +7,8 @@
     font-family: 'Inter', system-ui;
 }
 
+
 #main {
-    padding: 32px;
     position: relative;
 }
 
@@ -67,13 +67,13 @@ button:hover {
     background-color: #3c0d99;
 }
 
-
 header {
     margin-bottom: 240px;
 }
 
 .header__container {
     display: flex;
+    /* justify-content: center; */
 }
 
 .section__title {
@@ -84,14 +84,21 @@ header {
 .sub__title {
     margin-bottom: 16px;
 }
+/* NAVBAR */
 
+#navbar {
+    width: 1280px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 32px;
+}
 /* LANDING */
 
 .row {
-    width: 100%;
-    max-width: 1280px;
+    width: 1280px;
+    max-width: 100%;
     margin: 0 auto;
-
+    padding: 0 32px;
 }
 
 .nav {
@@ -106,13 +113,14 @@ header {
 .nav__links {
     display: flex;
     align-items: center;
+
 }
 
 .nav__link {
     position: relative;
 }
 .nav__link--wrapper {
-    padding-right: 56px;
+    padding-left: 56px;
 }
 
 .nav__link:after {
@@ -135,7 +143,7 @@ header {
 .logo__wrapper {
     display: flex;
     align-items: center;
-    margin: 24px;
+    margin: 24px 0;
 }
 
 .logo {
@@ -169,8 +177,12 @@ header {
 
 }
 
+.header__img--wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
 .header__img {
-    width: 100%;
+    width: 90%;
 }
 
 .email__wrapper {
@@ -179,15 +191,20 @@ header {
     max-width: 90%;
     border: 2px solid rgb(226, 232, 240);
     border-radius: 9999px;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 4px;
 }
 
 .email__input {
-    margin-right: 96px;
+    margin-left: 24px;
+    width: 60%;
+    max-width: 100%;
 }
 
-.email__btn {}
+.email__btn {
+    width: 40%;
+    max-width: 100%;
+}
 
 .cust {
     font-size: 12px;
@@ -223,10 +240,11 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
 
 .features__para {
-    max-width: 55%;
+
     padding: 32px 0 32px 0;
 }
 
@@ -235,7 +253,7 @@ header {
 .services {
     display: flex;
     flex-wrap: wrap;
-    padding: 64px 64px 64px 64px;
+    padding: 64px 0px 64px 0px;
 }
 
 .service {
@@ -446,27 +464,20 @@ header {
 
 .plans {
     display: flex;
-    /* flex-wrap: wrap; */
     padding-top: 64px;
     justify-content: space-between;
 }
 
-
-
 .plan {
-
     display: flex;
     flex-direction: column;
     width: calc(100%/3);
     max-width: 100%;
     align-items: center;
-    /* border: 1px transparent rgb(226, 232, 240); */
-    /* padding: 0 32px 0 32px; */
     box-shadow: 0 1px 1px 0 rgb(172, 171, 171);
     margin: 0 16px;
     border-bottom-left-radius: 9px;
     border-bottom-right-radius: 9px;
-
 }
 
 .top__bar-left {
@@ -692,6 +703,7 @@ header {
 }
 
 /* GETTING STARTED */
+
 #getting__started {
     margin-top: 150px;
     margin-bottom: 150px;
@@ -766,22 +778,31 @@ header {
     height: 100px; */
 }
 
-.footer__content {
+.footer__container {
+    width: 1280px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.footer__links--container {
     display: flex;
     justify-content: space-between;
     color: white;
-    padding-bottom: 50px;
+    padding: 0 32px 52px 32px;
 }
 
-hr {
+.footer__line {
     display: block;
     height: 1px;
-    width: 1280px;
+    width: 100%;
+    max-width: 100%;
     border: 0;
     border-top: 1px solid rgb(245, 101, 101);
     margin: 1em 0;
     padding-bottom: 50px;
     opacity: 40%;
+    overflow-x: hidden;
 }
 
 .footer__links--heading {
@@ -868,4 +889,55 @@ hr {
 
 .footer__copyright {
     display: flex;align-items: center;
+}
+
+/* SMALL PHONES, TABLETS, SMART-PHONES */
+
+@media (max-width: 1023px) {
+    .header__container {
+        display: block;
+    }
+    .header__description {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+    .header__img--wrapper {
+        margin-top: 32px;
+    }
+    .header__img {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+    }
+    .email__wrapper {
+        margin: 0 auto;
+    }
+    .email__input {
+
+    }
+    .nav__links {
+        display: none;
+    }
+    .service {
+        display: flex;
+        width: calc(100%/2);
+        padding: 0 40px 40px 40px;
+    }
+    .plans {
+        display: block;
+        /* margin: 0 auto; */
+    }
+    .plan {
+        margin-bottom: 32px;
+        margin: 32px auto;
+    }
+}
+
+/* REALLY SMALL PHONES */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 30px;
+    }
 }
