@@ -31,6 +31,7 @@ li {
 a {
     text-decoration: none;
     color: #000;
+    cursor: not-allowed;
 }
 
 h1 {
@@ -60,10 +61,11 @@ button {
     padding: 16px 32px;
     margin: 0;
     transition: 0.4s;
+    cursor: not-allowed;
 }
 
 button:hover {
-    cursor: pointer;
+    /* cursor: pointer; */
     background-color: #3c0d99;
 }
 
@@ -695,11 +697,11 @@ header {
     max-width: 100%;
     width: 800px;
     border-radius: 15px;
-
+    cursor: not-allowed;
 }
 
 .faq__row:hover {
-    cursor: pointer;
+    /* cursor: pointer; */
     background-color: rgb(226, 232, 240);
 }
 
@@ -741,6 +743,7 @@ header {
 .box__button {
     border-radius: 9999px;
     padding: 20px 40px;
+    cursor: not-allowed;
 }
 
 .orange {
@@ -815,7 +818,7 @@ header {
     color: white;
 
     position: relative;
-    cursor: pointer;
+    cursor: not-allowed;
     padding-bottom: 0.25rem;
 }
 .footer__links--wrapper {
@@ -945,6 +948,7 @@ header {
         display: block;
         width: 100%;
         max-width: 100%;
+        cursor: not-allowed;
 }
 
 /* REALLY SMALL PHONES */
