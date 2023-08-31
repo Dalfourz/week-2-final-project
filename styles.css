@@ -375,7 +375,7 @@ header {
 .value__container {
     display: flex;
     align-items: center;
-    margin: 100px 32px 64px 32px;
+    margin: 100px 0 64px 0;
 }
 
 .values__desc {
@@ -558,6 +558,7 @@ header {
 
 .bottom__button {
     width: 240px;
+    max-width: 100%;
     padding: 16px 32px 16px 32px;
 }
 
@@ -714,9 +715,7 @@ header {
 }
 
 .getting__started--box {
-    /* width: 1280; */
     max-width: 100%;
-    /* height: 282; */
     background-color: #6415FF;
     color: white;
     display: flex;
@@ -729,6 +728,9 @@ header {
     cursor: pointer;
 }
 
+.getting__started--desc {
+    width: 100%;
+}
 
 .getting__started--buttons {
     display: flex;
@@ -932,12 +934,89 @@ header {
     .plan {
         margin-bottom: 32px;
         margin: 32px auto;
+        width: 60%;
+        max-width: 100%;
     }
+    .getting__started--box {
+        display: block;
+        background-color: ;
+    }
+    .getting__started--buttons {
+        display: block;
+        width: 100%;
+        max-width: 100%;
 }
 
 /* REALLY SMALL PHONES */
 @media (max-width: 767px) {
     h1 {
         font-size: 30px;
+    }
+    .work__wrapper {
+        display: block;
+    }
+    .work__description {
+        width: 100%;
+        max-width: 100%;
+    }
+    .img__wrapper {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 32px;
+    }
+    .steps__container {
+        display: block;
+    }
+    .steps__img-wrapper {
+        width: 100%;
+        max-width: 100%;
+    }
+    .steps__desc {
+        width: 100%;
+        max-width: 100%;
+    }
+    .value__container {
+        display: block;
+    }
+    .values__desc {
+        width: 100%;
+    }
+    .testimonial__container {
+        display: block;
+    }
+    .testimonial__img-wrapper {
+        width: 100%;
+        max-width: 100%;
+    }
+    .testimonial__desc-wrapper {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* 640 px */
+
+@media (max-width: 639px) {
+    
+    }
+    .box__left {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+    .box__button {
+        margin: 0 auto 16px;
+        width: 60%;
+        text-align: center;
+    }
+    .footer__lower--part {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer__logo--container {
+        margin-bottom: 16px;
+    }
+    .footer__copyright {
+        margin-bottom: 24px;
     }
 }
