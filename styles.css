@@ -13,7 +13,11 @@
 }
 
 section {
-    margin-bottom: 240px;
+    margin-bottom: 200px;
+}
+
+.hidden {
+    display: none;
 }
 
 .purple {
@@ -94,28 +98,28 @@ header {
 /* NAVBAR */
 
 #navbar {
-    width: 1280px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 1280px;
     margin: 0 auto;
-    padding: 0 32px;
+    padding: 32px 32px 80px 32px;
 }
 
 /* LANDING */
 
 .row {
-    width: 1280px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 0 32px;
 }
 
 .nav {
+    width: 100%;
+    max-width: 1280px;
     height: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 32px 0 80px 0;
-
 }
 
 .nav__links {
@@ -294,10 +298,6 @@ header {
 
 /* WORK */
 
-#work {
-    padding: 64px 0 128px 0;
-}
-
 .work__title {
     font-weight: 600;
 }
@@ -475,14 +475,15 @@ header {
 .plans {
     display: flex;
     padding-top: 64px;
-    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 100%;
 }
 
 .plan {
     display: flex;
     flex-direction: column;
-    width: calc(100%/3);
-    max-width: 100%;
+    max-width: calc(100%/3);
+    width: 100%;
     align-items: center;
     box-shadow: 0 1px 1px 0 rgb(172, 171, 171);
     margin: 0 16px;
@@ -509,7 +510,11 @@ header {
     display: block;
     height: 1px;
     width: 100%;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid lightgray;
+}
+
+.blue {
+    border-bottom: 1px solid lightblue
 }
 
 .business {
@@ -605,7 +610,8 @@ header {
 
 .testimonial__container {
     display: flex;
-    margin-top: 100px;
+    margin-top: 160px;
+    max-width: 100%;
 }
 
 .testimonial__img-wrapper {
@@ -625,6 +631,8 @@ header {
 
 .stars__wrapper {
     display: flex;
+    margin-top: 32px;
+    margin-bottom: 8px;
 }
 
 .star {}
@@ -642,15 +650,16 @@ header {
     max-width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-top: 16px;
 }
 
 .user__ex-img-wrapper {
-    padding: 16px 24px 16px 16px;
+    padding: 16px 24px 16px 0;
 }
 
 .user__details {
     display: flex;
-    padding: 16px;
+
 }
 
 .name__title {
@@ -794,10 +803,10 @@ header {
 }
 
 .footer__container {
-    width: 1280px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 1280px;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 32px;
 }
 
 .footer__links--container {
@@ -913,20 +922,80 @@ header {
 
 /* TABLETS */
 
-@media (min-width: 1024px) {
+@media (max-width: 1023px) {
 
-    
+    .nav__links {
+        display: none;
+    }
+
+    .hidden {
+        display: block;
+    }
+
+    .fa-bars {
+        font-size: 24px;
+    }
+
+    .header__container {
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 70%;
+    }
+
+    .header__description {
+        max-width: 100%;
+    }
+
+    .email__btn {
+        max-width: 30%;
+    }
+
+    .features__para {
+        max-width: 70%;
+        text-align: center;
+    }
+
+    .services {
+        max-width: 70%;
+    }
+
+    .service {
+        width: calc(100%/2);
+        padding-left: 0;
+    }
+
+    .plans {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .plan {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .testimonial__container {
+        
+    }
+
+    .getting__started--box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .getting__started--desc {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
 }
 
 /* MEDIUM PHONES */
-@media (min-width: 768px) {
-    
-
-}
+@media (max-width: 767px) {}
 
 /* SMALL PHONES */
 
-@media (min-width: 384px) {
-    
-
-}
+@media (max-width: 383px) {}
